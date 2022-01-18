@@ -50,8 +50,8 @@ class CardGame
     # or replace current if it's cards are better
     if winner.empty? || value > winner_value
       winner.replace([player])
-    elsif # might be a TIE
-      value == winner_value
+    # might be a TIE
+    elsif value == winner_value
       winner << player
     end
   end
